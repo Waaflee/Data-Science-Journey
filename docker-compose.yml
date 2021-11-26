@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  keras:
+    image: tensorflow/tensorflow:latest-gpu-jupyter
+    environment:
+      TF_CPP_MIN_LOG_LEVEL: 3
+    stdin_open: true
+    tty: true
+    ports:
+      - 8888:8888
+    volumes:
+      - ./data:/tf/data
