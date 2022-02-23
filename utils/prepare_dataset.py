@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import shutil
 
 # Splits dataset into training and test subsets
